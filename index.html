@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Flight App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Map -->
+    <div class="map-background"></div>
+    
+    <div class="main-container">
+        <!-- Flight Card (Top Left) -->
+        <div class="flight-card">
+            <div class="flight-times">
+                <div class="departure-time">9:20</div>
+                <div class="duration">3:50</div>
+            </div>
+            
+            <div class="flight-info">
+                <div class="route-section">
+                    <div class="airport">
+                        <div class="code">MSC</div>
+                        <div class="city">Moscow</div>
+                    </div>
+                    
+                    <div class="flight-path">
+                        <div class="path-line"></div>
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    
+                    <div class="airport">
+                        <div class="code">LDN</div>
+                        <div class="city">London</div>
+                    </div>
+                </div>
+                
+                <div class="flight-details">
+                    <div class="date-row">
+                        <span>APR 11, 2017</span>
+                        <span>APR 11, 2017</span>
+                    </div>
+                    <div class="time-row">
+                        <span>12:20</span>
+                        <span>15:50</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="travel-info">
+                <div>TRAVEL TIME: 3:30</div>
+                <div>5 DAYS LEFT, DEPARTURE</div>
+            </div>
+        </div>
+
+        <!-- Weather Search -->
+        <div class="weather-search">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Current Weather Cards -->
+        <div class="weather-cards" id="weather-display">
+            <!-- Cards will be populated by JavaScript -->
+        </div>
+
+        <!-- Weather Text Info -->
+        <div class="weather-text">
+            <p>Besides the weather forecast for the duration of your trip, the site after analyzing will provide advice on clothing or remind to bring along the necessary attributes, such as an umbrella. That you don't feel the extra discomfort during your travel.</p>
+            <p>Not only weather conditions notifications will come on your phone beforehand, but also a reminder of the departure time specified by you. This opportunity is always possible to enable, disable, or configure the settings.</p>
+        </div>
+
+        <!-- Weekly Forecast -->
+        <div class="weekly-forecast">
+            <h3>WEATHER FORECAST FOR YOUR WEEK</h3>
+            <div class="week-grid" id="week-grid">
+                <!-- Week items will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay hidden" id="loading">
+        <div class="spinner"></div>
+        <span>Loading weather data...</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
