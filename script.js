@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loading = document.getElementById('loading');
 
     // API Configuration
-    const API_KEY = "6d26263eda004a81579a5f85ab9b10b4";
+    const API_KEY = "your api key";
     const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
     // Weather icon mapping
